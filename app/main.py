@@ -16,7 +16,7 @@ def index():
 
     return {
         'color': '#4F734D',
-        'head': head_url
+        'head': head
     }
 
 
@@ -27,19 +27,22 @@ def start():
     # TODO: Do things with data
 
     return {
-        'taunt': 'battlesnake-python!'
+        'taunt': 'WRUM! WRUM! WRUM!'
     }
 
 
 @bottle.post('/move')
 def move():
     data = bottle.request.json
+    
+    for snake in data["snakes"]
+        print snake
 
     # TODO: Do things with data
 
     return {
         'move': 'north',
-        'taunt': 'battlesnake-python!'
+        'taunt': 'Dodge!'
     }
 
 
@@ -50,7 +53,7 @@ def end():
     # TODO: Do things with data
 
     return {
-        'taunt': 'battlesnake-python!'
+        'taunt': 'RAGNAROK!'
     }
 
 
