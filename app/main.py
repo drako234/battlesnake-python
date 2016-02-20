@@ -35,7 +35,7 @@ def start():
 def move():
     data = bottle.request.json
     
-    for snake in data["snakes"]
+    for snake in data["snakes"]:
         print snake
 
     # TODO: Do things with data
